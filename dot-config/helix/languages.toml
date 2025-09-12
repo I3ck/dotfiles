@@ -1,0 +1,35 @@
+[[language]]
+name = "elixir"
+scope = "source.elixir"
+file-types = ["ex", "exs", "heex"]
+roots = ["mix.exs"]
+auto-format = true
+diagnostic-severity = "hint"
+comment-token = "#"
+indent = {tab-width = 2, unit = " "}
+language-servers = ["elixir-ls"]
+
+[[language]]
+name = "elm"
+scope = "source.elm"
+file-types = ["elm"]
+#roots = ["mix.exs"]
+#auto-format = true
+diagnostic-severity = "hint"
+comment-token = "--"
+indent = {tab-width = 2, unit = " "}
+language-servers = ["elm-language-server"]
+
+[[language]]
+name = "racket"
+scope = "source.rkt"
+file-types = ["rkt"]
+auto-format = true
+diagnostic-severity = "hint"
+comment-token = ";"
+indent = {tab-width = 2, unit = " "}
+language-servers = ["racket"]
+
+[language-server.racket]
+command = "racket"
+args = ["-l", "racket-langserver"]
