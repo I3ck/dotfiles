@@ -1,0 +1,45 @@
+[core]
+	autocrlf = input
+	editor = helix
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+
+[user]
+	name = Martin Buck
+	email = buckmartin@buckmartin.de
+
+[push]
+	default = current
+
+[credential]
+	helper = cache --timeout 3600
+
+[color]
+    diff = auto
+
+[color "diff"]
+    meta = blue bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[alias]
+    lg  = "log --pretty=format:'%Cblue%h%Creset %s%C(auto)%d%Creset %Cgreen[%an]%n'"
+    ht  = "log --graph --pretty=format:'%Cblue%h%Creset %s%C(auto)%d%Creset %Cgreen[%an]%n%Cgreen================================================================================%n' -p"
+    df  = "diff --word-diff=color"
+    dfs = "diff --word-diff=color --staged"
+    br  = "checkout -b"
+    co  = "checkout"
+
+[pack]
+	windowMemory = 512m
+	packSizeLimit = 512m
+
+[merge]
+	#conflictstyle = diff3
+	conflictstyle = zdiff3
