@@ -143,25 +143,14 @@
     },
     "cpu": {
 	"interval": 2,
-	"format": "{icon} {usage}% ",
-        "format-icons": [
-          "<span color='#69ff94'>▁</span>",
-          "<span color='#2aa9ff'>▂</span>",
-          "<span color='#f8f8f2'>▃</span>",
-          "<span color='#f8f8f2'>▄</span>",
-          "<span color='#ffffa5'>▅</span>",
-          "<span color='#ffffa5'>▆</span>",
-          "<span color='#ff9977'>▇</span>",
-          "<span color='#dd532e'>█</span>"
-        ],
+	"format": "{usage}% ",
         "tooltip": true
     },
     "memory": {
         "format": "{}% "
     },
     "disk": {
-	"format": "{specific_used:0.0f}/{specific_total:0.0f} 🖴",
-	"unit": "GB",
+	"format": "{percentage_used}% 🖴",
 	"path": "/home"
     },
     "temperature": {
