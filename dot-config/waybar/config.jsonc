@@ -7,13 +7,15 @@
     "spacing": 8, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
-        "custom/media"
+	"niri/workspaces"
+        //"sway/workspaces",
+        //"sway/mode",
+        //"sway/scratchpad",
+        //"custom/media"
     ],
     "modules-center": [
-        "sway/window"
+        "sway/window",
+	"niri/window"
     ],
     "modules-right": [
         "mpd",
@@ -34,6 +36,13 @@
         "tray",
         "custom/power"
     ],
+    "niri/workspaces": {
+	"format": "{value}"
+    },
+    "niri/window": {
+	"icon": true,
+	"icon-size": 32
+    },
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -112,7 +121,7 @@
         // }
     },
     "clock": {
-        "format": "{:%H:%M ⏰ %d.%m.%y 📅}",
+        "format": "{:%d.%m.%y 📅 %H:%M ⏰ }",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 	"calendar": {
 	    "mode"          : "month",
