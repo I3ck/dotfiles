@@ -112,7 +112,7 @@
         // }
     },
     "clock": {
-        "format": "{:%H:%M %d.%m.%y}",
+        "format": "{:%H:%M ⏰ %d.%m.%y 📅}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 	"calendar": {
 	    "mode"          : "month",
@@ -150,7 +150,7 @@
         "format": "{}% "
     },
     "disk": {
-	"format": "{specific_used:0.0f}/{specific_total:0.0f} GB",
+	"format": "{specific_used:0.0f}/{specific_total:0.0f} 🖴",
 	"unit": "GB",
 	"path": "/home"
     },
