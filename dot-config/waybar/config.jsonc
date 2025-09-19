@@ -24,7 +24,6 @@
     },
     "niri/window": {
 	"icon": true,
-	"icon-size": 32
     },
     "clock": {
         "format": "{:%d.%m.%y 📅 %H:%M ⏰}",
