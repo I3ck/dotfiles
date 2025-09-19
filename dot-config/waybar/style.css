@@ -4,9 +4,9 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
+    background-color: rgba(21, 20, 27, 0.5);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: #ffffff;
+    color: #edecee;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -46,7 +46,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px #a277ff;
 }
 
 #mode {
@@ -71,13 +71,13 @@ button:hover {
     min-height: 10px;
     min-width: 80px;
     border-radius: 5px;
-    background-color: #aaaaaa; 
+    background-color: #6d6d6d; 
 }
 
 #pulseaudio-slider highlight {
     min-width: 10px;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #edecee; 
 }
 
 #clock,
@@ -98,7 +98,30 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 20px;
-    color: #ffffff;
+}
+
+#pulseaudio {
+   color: #a277ff;
+}
+
+#network {
+   color: #61ffca; 
+}
+
+#cpu {
+   color: #ffca85;
+}
+
+#memory {
+   color: #f694ff; 
+}
+
+#disk {
+    color: #82e2ff;
+}
+
+#clock {
+    color: #a277ff;
 }
 
 #window,
