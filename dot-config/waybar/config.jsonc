@@ -23,6 +23,7 @@
 	"format": "{value}"
     },
     "niri/window": {
+	"max-length": 45,
 	"icon": true
     },
     "clock": {
