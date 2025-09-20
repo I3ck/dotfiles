@@ -9,9 +9,9 @@
 	"niri/window"
     ],
     "modules-right": [
+        "network",
         "pulseaudio",
 	"pulseaudio/slider",
-        "network",
         "cpu",
         "memory",
 	"disk",
@@ -23,7 +23,7 @@
 	"format": "{value}"
     },
     "niri/window": {
-	"icon": true,
+	"icon": true
     },
     "clock": {
         "format": "{:%d.%m.%y 📅 %H:%M ⏰}",
@@ -47,32 +47,32 @@
     },
     "cpu": {
 	"interval": 2,
-	"format": "{usage}% ",
+	"format": "{usage:3}% ",
         "tooltip": true
     },
     "memory": {
-        "format": "{}% "
+        "format": "{:3}% "
     },
     "disk": {
-	"format": "{percentage_used}% 🖴",
+	"format": "{percentage_used:3}% 🖴",
 	"path": "/home"
     },
     "network": {
 	"interval": 2,
-        "format-wifi": "{bandwidthTotalBytes} {essid} {signalStrength}%  ",
+        "format-wifi": "{bandwidthTotalBytes} {essid} {signalStrength:3}%  ",
         "format-ethernet": "{bandwidthTotalBytes} {ipaddr}/{cidr} ",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "Disconnected ⚠"
     },
     "pulseaudio/slider": {
     },
     "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format": "{volume:3}% {icon} {format_source}",
+        "format-bluetooth": "{volume:3}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": "{volume:3}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
