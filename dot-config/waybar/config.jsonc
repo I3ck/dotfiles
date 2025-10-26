@@ -82,7 +82,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [""]
         },
         "on-click": "pavucontrol --tab=3"
     },
