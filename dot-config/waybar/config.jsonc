@@ -14,7 +14,8 @@
 	"pulseaudio/slider",
         "cpu",
         "memory",
-	"disk",
+	"disk#home",
+	"disk#root",
         "clock",
         "tray",
         "custom/power"
@@ -54,9 +55,13 @@
     "memory": {
         "format": "{:3}% "
     },
-    "disk": {
-	"format": "{percentage_used:3}% 🖴",
+    "disk#home": {
+	"format": "{percentage_used:3}% ~",
 	"path": "/home"
+    },
+    "disk#root": {
+	"format": "{percentage_used:3}% /",
+	"path": "/"
     },
     "network": {
 	"interval": 2,
