@@ -7,6 +7,7 @@ vim.cmd("set autoindent")
 vim.cmd("nnoremap <SPACE> <Nop>")
 vim.cmd("let mapleader=\" \"")
 
+vim.lsp.enable('rust_analyzer')
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>p', builtin.find_files, {})

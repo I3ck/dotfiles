@@ -4,3 +4,6 @@
 [submodule "dot-config/nvim/pack/plugins/start/plenary.nvim"]
 	path = dot-config/nvim/pack/plugins/start/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
+[submodule "dot-config/nvim/pack/plugins/start/nvim-lspconfig"]
+	path = dot-config/nvim/pack/plugins/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
