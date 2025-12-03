@@ -1,0 +1,6 @@
+[submodule "dot-config/nvim/pack/plugins/start/telescope.nvim"]
+	path = dot-config/nvim/pack/plugins/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim
+[submodule "dot-config/nvim/pack/plugins/start/plenary.nvim"]
+	path = dot-config/nvim/pack/plugins/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim
