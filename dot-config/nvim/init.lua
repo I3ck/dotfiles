@@ -24,6 +24,9 @@ vim.keymap.set('n', '<leader>f', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>b', builtin.buffers, {})
 vim.keymap.set('n', '<leader>d', builtin.diagnostics, {})
 
+-- Prevent vim.lsp.completion autotrigger from selecting the first item
+vim.opt.completeopt = { "menuone", "noselect", "popup" }
+
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('my.lsp', {}),
   callback = function(args)
