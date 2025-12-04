@@ -17,6 +17,15 @@ vim.keymap.set('n', '<leader>h', '<C-W><C-H>', {noremap = true})
 vim.keymap.set('n', '<leader>s', ':vs<cr>', {noremap = true})
 
 vim.lsp.enable('rust_analyzer')
+vim.lsp.config('rust_analyzer', {
+    settings = {
+        ["rust-analyzer"] = {
+            rustfmt = {
+                extraArgs = { "+nightly", },
+            },
+        }
+    }
+})
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>p', builtin.find_files, {})
