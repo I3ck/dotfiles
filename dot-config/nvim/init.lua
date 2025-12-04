@@ -12,6 +12,9 @@ vim.keymap.set('n', '<c-l>', '<c-w><c-l>', {noremap = true})
 vim.keymap.set('n', '<c-h>', '<c-w><c-h>', {noremap = true})
 vim.keymap.set('n', '<c-s>', ':vs<cr>', {noremap = true})
 
+vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
+
 vim.lsp.enable('rust_analyzer')
 vim.lsp.config('rust_analyzer', {
     settings = {
