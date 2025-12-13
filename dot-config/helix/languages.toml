@@ -13,6 +13,9 @@ comment-token = "#"
 indent = {tab-width = 2, unit = " "}
 language-servers = ["elixir-ls"]
 
+[language-server.elixir-ls]
+command = "elixir-ls"
+
 [[language]]
 name = "elm"
 scope = "source.elm"
