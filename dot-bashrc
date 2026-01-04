@@ -11,6 +11,7 @@ export VISUAL=nvim
 
 PATH=$PATH:~/.cargo/bin
 PATH=$PATH:~/bin
+PATH=$PATH:~/.ghcup/bin
 
 # Running fish
 #if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z ${BASH_EXECUTION_STRING} && ${SHLVL} == 1 ]]
