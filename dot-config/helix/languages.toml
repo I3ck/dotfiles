@@ -40,3 +40,11 @@ language-servers = ["racket"]
 [language-server.racket]
 command = "racket"
 args = ["-l", "racket-langserver"]
+
+[[language]]
+name = "haskell"
+roots = ["Setup.hs", "stack.yaml", "*.cabal"]
+auto-format = true
+
+[language-server.haskell-language-server]
+config.haskell.formattingProvider = "stylish-haskell"
