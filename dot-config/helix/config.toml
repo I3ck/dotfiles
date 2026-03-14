@@ -5,6 +5,9 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.file-picker]
+hidden = false
+
 [keys.normal]
 C-s = "vsplit"
 C-h = "jump_view_left"
