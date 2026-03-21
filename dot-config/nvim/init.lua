@@ -34,6 +34,16 @@ vim.lsp.config('elixirls', {
     cmd = { "elixir-ls" };
 })
 
+vim.lsp.enable('hls')
+vim.lsp.config('hls', {
+    settings = {
+      haskell = {
+        formattingProvider = 'stylish-haskell',
+        cabalFormattingProvider = 'cabalfmt',
+      },
+    },
+})
+
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<c-p>', builtin.find_files, {})
 vim.keymap.set('n', '<c-f>', builtin.live_grep, {})
