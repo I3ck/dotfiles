@@ -5,6 +5,9 @@ vim.cmd("set autoindent")
 vim.cmd("set splitright")
 vim.cmd("set splitbelow")
 
+-- Always reserve space for column to avoid movement
+vim.opt.signcolumn = "yes"
+
 -- Single key window traversal
 vim.keymap.set('n', '<c-j>', '<c-w><c-j>', {noremap = true})
 vim.keymap.set('n', '<c-k>', '<c-w><c-k>', {noremap = true})
