@@ -7,3 +7,6 @@
 [submodule "dot-config/nvim/pack/plugins/start/nvim-lspconfig"]
 	path = dot-config/nvim/pack/plugins/start/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
+[submodule "dot-config/nvim/pack/plugins/start/gitsigns.nvim"]
+	path = dot-config/nvim/pack/plugins/start/gitsigns.nvim
+	url = https://github.com/lewis6991/gitsigns.nvim
