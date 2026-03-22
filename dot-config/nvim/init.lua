@@ -40,12 +40,14 @@ vim.lsp.config('elixirls', {
 
 vim.lsp.enable('hls')
 vim.lsp.config('hls', {
+    filetypes = { 'haskell', 'lhaskell', 'cabal' },
     settings = {
       haskell = {
+        completionSnippetsOn = true,
         formattingProvider = 'stylish-haskell',
         cabalFormattingProvider = 'cabalfmt',
       },
-    },
+   },
 })
 
 require('gitsigns').setup()
