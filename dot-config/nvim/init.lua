@@ -9,6 +9,9 @@ vim.cmd("set smartindent")
 vim.cmd("set tabstop=2")
 vim.cmd("set shiftwidth=2")
 
+-- Use system clipboard
+vim.opt.clipboard = "unnamedplus"
+
 -- Always reserve space for column to avoid movement
 vim.opt.signcolumn = "yes"
 
