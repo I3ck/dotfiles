@@ -10,3 +10,6 @@
 [submodule "dot-config/nvim/pack/plugins/start/gitsigns.nvim"]
 	path = dot-config/nvim/pack/plugins/start/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim
+[submodule "dot-config/nvim/pack/plugins/start/blink.cmp"]
+	path = dot-config/nvim/pack/plugins/start/blink.cmp
+	url = https://github.com/saghen/blink.cmp

@@ -52,6 +52,12 @@ vim.lsp.config('hls', {
 
 require('gitsigns').setup()
 
+require('blink.cmp').setup({
+  fuzzy = {
+    implementation = "lua"
+  }
+})
+
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<c-p>', builtin.find_files, {})
 vim.keymap.set('n', '<c-f>', builtin.live_grep, {})
@@ -70,13 +76,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
     local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
     if client:supports_method('textDocument/implementation') then
       -- Create a keymap for vim.lsp.buf.implementation ...
-    end
-    -- Enable auto-completion. Note: Use CTRL-Y to select an item. |complete_CTRL-Y|
-    if client:supports_method('textDocument/completion') then
-      -- Trigger autocomplete via most chars (NOT space [32])
-      local chars = {}; for i = 33, 126 do table.insert(chars, string.char(i)) end
-      client.server_capabilities.completionProvider.triggerCharacters = chars
-      vim.lsp.completion.enable(true, client.id, args.buf, {autotrigger = true})
     end
     -- Auto-format ("lint") on save.
     -- Usually not needed if server supports "textDocument/willSaveWaitUntil".
