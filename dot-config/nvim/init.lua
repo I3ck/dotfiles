@@ -59,6 +59,9 @@ vim.keymap.set('n', '<c-d>', builtin.diagnostics, {})
 -- Prevent vim.lsp.completion autotrigger from selecting the first item
 vim.opt.completeopt = { "menuone", "noselect", "popup" }
 
+-- LSP rebinds
+vim.keymap.set('n', '<space>k', vim.diagnostic.open_float, {})
+
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('my.lsp', {}),
   callback = function(args)
