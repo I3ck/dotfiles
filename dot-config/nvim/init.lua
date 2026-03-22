@@ -55,6 +55,10 @@ require('gitsigns').setup()
 require('blink.cmp').setup({
   fuzzy = {
     implementation = "lua"
+  },
+  keymap = {
+    ['<Enter>'] = { 'accept', 'fallback' },
+    ['<Tab>'] = { 'accept', 'fallback' },
   }
 })
 
