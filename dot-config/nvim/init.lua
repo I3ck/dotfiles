@@ -4,6 +4,10 @@ vim.cmd("set number")
 vim.cmd("set autoindent")
 vim.cmd("set splitright")
 vim.cmd("set splitbelow")
+vim.cmd("set expandtab")
+vim.cmd("set smartindent")
+vim.cmd("set tabstop=2")
+vim.cmd("set shiftwidth=2")
 
 -- Always reserve space for column to avoid movement
 vim.opt.signcolumn = "yes"
