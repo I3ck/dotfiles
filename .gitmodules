@@ -13,3 +13,6 @@
 [submodule "dot-config/nvim/pack/plugins/start/blink.cmp"]
 	path = dot-config/nvim/pack/plugins/start/blink.cmp
 	url = https://github.com/saghen/blink.cmp
+[submodule "dot-config/nvim/pack/plugins/start/neovim-ayu"]
+	path = dot-config/nvim/pack/plugins/start/neovim-ayu
+	url = https://github.com/Shatur/neovim-ayu

@@ -1,4 +1,4 @@
-vim.cmd("colorscheme habamax")
+vim.cmd("colorscheme ayu")
 
 vim.cmd("set number")
 vim.cmd("set autoindent")
@@ -61,6 +61,8 @@ require('blink.cmp').setup({
     ['<Tab>'] = { 'accept', 'fallback' },
   }
 })
+
+require('ayu').setup({})
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<c-p>', builtin.find_files, {})
