@@ -5,4 +5,4 @@ size = 14.0
 history = 100000
 
 [general]
-import = ["~/.config/alacritty/alacritty-aura-theme.toml"]
+import = ["~/.config/alacritty/ayu-dark-theme.toml"]
