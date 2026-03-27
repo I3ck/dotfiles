@@ -1,9 +1,21 @@
 theme = "ayu_dark"
 
+[editor]
+cursorline = true
+continue-comments = false
+color-modes = true
+# center row, top row, buttom row
+jump-label-alphabet = "asdfghjklqwertyuiopbcmnvxz"
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 1
 
 [editor.file-picker]
 hidden = false
